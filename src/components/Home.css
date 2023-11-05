@@ -1,0 +1,22 @@
+.fluid-logo{
+    display: flex;
+    height:80vh;
+    width:100vw;
+    justify-content: center;
+    align-items: center;
+}
+.fluid-text{
+    animation:grow 800ms ease-in-out forwards;
+    font-size: 10vw;
+    transform: translateY(100px);
+}
+
+@keyframes grow{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0);
+    }
+}

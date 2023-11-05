@@ -1,0 +1,141 @@
+.rcontainer{
+    background-color: rgb(239 235 247);
+    min-height:100vh;
+    min-width: 100vw;
+    padding:10px
+  }
+.qcontainer{
+    border-top:10px solid rgb(103, 58, 183);
+    border-radius:10px;
+    background-color: white;
+    padding:15px;
+    width:60%;
+    margin:20px auto;
+  }
+.option-label{
+  
+  margin:10px 0;
+}
+.option{
+  margin-left: 10px;
+}
+.qbox{
+  margin:20px 0;  
+  padding:20px;
+  border-radius: 10px;
+background: white;
+box-shadow: inset -5px 5px 12px white,
+            inset 5px 5px 12px rgba(0,0,0,.32),
+            
+}
+.submit {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.op-box{
+  margin:30px 0;
+}
+.submit:hover {
+  background-color: #2381c4;
+  box-shadow: 0px 15px 20px rgba(46, 104, 229, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.submit:active {
+  transform: translateY(-1px);
+}
+.submit-btn{
+  text-align: center;
+
+}
+.title-box{
+  padding:10px;
+  border-radius: 10px;
+background: white;
+  box-shadow: inset -5px 5px 12px white,
+            inset 5px 5px 12px rgba(0,0,0,.32);
+}
+.graph-box{
+  width:50%;
+  margin:0 auto;
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.spinner {
+  width: 200px;
+  height: 200px;
+  display: grid;
+  border: 4.5px solid #0000;
+  border-radius: 50%;
+  border-color: #dbdcef #0000;
+  animation: spinner-load 1s infinite linear;
+  margin:50vh 45vw
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2.2px;
+  border: inherit;
+  border-radius: 50%;
+}
+
+.spinner::before {
+  border-color: #474bff #0000;
+  animation: inherit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+
+.spinner::after {
+  margin: 8.9px;
+}
+
+.no-quiz{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes spinner-load {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .qcontainer{
+    width:100%; 
+  }
+  .graph-box{
+    border:1px solid black;
+    width:100%;
+    
+  }
+  .spinner{
+    margin:50vh 30vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .spinner{
+    margin:50vh 35vw;
+    width: 100px;
+    height: 100px;
+  }
+}

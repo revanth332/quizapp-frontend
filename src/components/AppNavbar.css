@@ -1,0 +1,22 @@
+.navb-link{
+    position:relative;
+}
+.navb-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.navb-link::after{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom:0;
+    height:5px;
+    margin-bottom:-7px;
+    width:100%;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    background-color: rgb(103, 58, 183);
+    z-index: 1;
+    transition: transform 200ms ease-in-out;
+}
