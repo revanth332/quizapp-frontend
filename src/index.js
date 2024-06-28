@@ -23,6 +23,7 @@ root.render(
         <Route index path="/signup" element={<SignUp />}></Route>
         <Route path="/quizid/:id" element={<Quiz />} />
         <Route path="/makequiz" element={<App/>}/>
+          <Route path="/create" element={<App/>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>
     </BrowserRouter>
