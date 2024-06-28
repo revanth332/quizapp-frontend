@@ -15,7 +15,7 @@ function AppNavbar({logged=false}) {
           {!logged ? <Nav>
             <Link style={{textDecoration:"none"}} to="/"><span className='fs-lg-5 me-3' style={{color:"black"}}>Home</span></Link>
             <Link style={{textDecoration:"none"}} to="/signup"><span className='fs-lg-5 me-3' style={{color:"black"}}>Sign Up</span></Link>
-            <Link style={{textDecoration:"none"}} to="/signin"><span className='fs-lg-5 ' style={{color:"black"}}>Sign In</span></Link>
+            <Link style={{textDecoration:"none"}} to="/makequiz"><span className='fs-lg-5 ' style={{color:"black"}}>Sign In</span></Link>
           </Nav> : <Nav>
             <Link style={{textDecoration:"none",color:"rgb(103, 58, 183)"}} to="/dashboard"><span className='navb-link' style={{marginLeft:10,fontWeight:"bold"}}>Dashboard</span></Link>
             <Link style={{textDecoration:"none",color:"rgb(103, 58, 183)"}} to="/makequiz"><span className='navb-link' style={{marginLeft:10,fontWeight:"bold"}}>Makequiz</span></Link>  
